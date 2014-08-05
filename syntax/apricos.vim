@@ -27,7 +27,7 @@ syn match binNumber "b[0-1]\+"
 syn keyword apricosTodo contained TODO
 
 " Line comments all start with ';'
-syn match apricosComment ";.*" contains=asmTodo
+syn match apricosComment ";.*" contains=apricosTodo
 
 
 syn keyword apricosInstruction ADD 
