@@ -45,6 +45,7 @@ syn keyword apricosInstruction LEAl LEAh
 syn keyword apricosInstruction BR BRn BRz BRp BRnz BRnp BRzp BRnzp 
 syn keyword apricosInstruction PRTin PRTout 
 syn keyword apricosInstruction ASET 
+syn keyword apricosInstruction SYS
 
 
 " storage types
