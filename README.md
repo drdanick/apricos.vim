@@ -1,4 +1,4 @@
 apricos.vim
 ===========
 
-Apricos assembler hilighting for Vim
+Apricos assembler highlighting for Vim
