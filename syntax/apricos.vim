@@ -17,6 +17,7 @@ syn case ignore
 
 syn match apricosLabel      "[a-zA-Z_][a-zA-Z0-9_\-]*:"
 syn match apricosDirective  "\.[a-z][a-z]\+"
+syn region apricosString start=/"/ skip=/\\"/ end=/"/
 
 " Number formats
 syn match decNumber "[0-9]\+"
@@ -41,7 +42,7 @@ syn keyword apricosInstruction LDI
 syn keyword apricosInstruction ST STal STah 
 syn keyword apricosInstruction STI 
 syn keyword apricosInstruction SPUSH SPOP
-syn keyword apricosInstruction LEAl LEAh 
+syn keyword apricosInstruction LA LAl LAh 
 syn keyword apricosInstruction BR BRn BRz BRp BRnz BRnp BRzp BRnzp 
 syn keyword apricosInstruction PRTin PRTout 
 syn keyword apricosInstruction ASET 
@@ -71,6 +72,7 @@ if version >= 508 || !exists("did_asm_syntax_inits")
   HiLink apricosLabel         Label
   HiLink apricosComment       Comment
   HiLink apricosTodo          Todo
+  HiLink apricosString        String
   HiLink hexNumber            Number
   HiLink decNumber            Number
   HiLink octNumber            Number
