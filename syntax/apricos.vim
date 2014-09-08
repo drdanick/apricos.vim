@@ -15,15 +15,15 @@ endif
 syn case ignore
 
 
-syn match apricosLabel      "[a-zA-Z_][a-zA-Z0-9_\-]*:"
-syn match apricosDirective  "\.[a-z][a-z]\+"
+syn match apricosLabel      "^\s*[a-zA-Z_][a-zA-Z0-9_\-]*:"
+syn match apricosDirective  "\.[a-z]\+"
 syn region apricosString start=/"/ skip=/\\"/ end=/"/
 
 " Number formats
-syn match decNumber "[0-9]\+"
-syn match octNumber "o[0-7]\+"
-syn match hexNumber "0\{,1}x[0-9a-fA-F]\+"
-syn match binNumber "b[0-1]\+"
+syn match decNumber "\<[0-9]\+\>"
+syn match octNumber "\<o[0-7]\+\>"
+syn match hexNumber "\<0\{,1}x[0-9a-fA-F]\+\>"
+syn match binNumber "\<b[0-1]\+\>"
 
 syn keyword apricosTodo contained TODO
 
@@ -56,6 +56,12 @@ syn match apricosType "\.fill"
 syn match apricosType "\.blockw"
 syn match apricosType "\.stringz"
 
+" Assembler directives
+syn match assemblerDirective "\#origin"
+syn match assemblerDirective "\#include"
+syn match assemblerDirective "\#macro"
+syn match assemblerDirective "\#endmacro"
+
 syn case match
 
 " Define the default highlighting.
@@ -80,6 +86,7 @@ if version >= 508 || !exists("did_asm_syntax_inits")
   HiLink apricosInstruction   Identifier
   HiLink apricosType          Type
   HiLink apricosDirective     Statement
+  HiLink assemblerDirective   PreProc
 
   delcommand HiLink
 endif
