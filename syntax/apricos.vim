@@ -50,19 +50,19 @@ syn keyword apricosInstruction SYS
 
 
 " storage types
-syn match apricosType "\<\.nearptr\>"
-syn match apricosType "\<\.segptr\>"
-syn match apricosType "\<\.farptr\>"
-syn match apricosType "\<\.fill\>"
-syn match apricosType "\<\.blockw\>"
-syn match apricosType "\<\.stringz\>"
+syn match apricosType "\.nearptr\>"
+syn match apricosType "\.segptr\>"
+syn match apricosType "\.farptr\>"
+syn match apricosType "\.fill\>"
+syn match apricosType "\.blockw\>"
+syn match apricosType "\.stringz\>"
 
 " Assembler directives
-syn match assemblerDirective "\<\#name\>"
-syn match assemblerDirective "\<\#segment\>"
-syn match assemblerDirective "\<\#include\>"
-syn match assemblerDirective "\<\#macro\>"
-syn match assemblerDirective "\<\#endmacro\>"
+syn match assemblerDirective "\#name\>"
+syn match assemblerDirective "\#segment\>"
+syn match assemblerDirective "\#include\>"
+syn match assemblerDirective "\#macro\>"
+syn match assemblerDirective "\#endmacro\>"
 
 syn case match
 
