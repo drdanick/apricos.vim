@@ -17,7 +17,11 @@ syn case ignore
 
 syn match apricosLabel      "^\s*[a-zA-Z_][a-zA-Z0-9_\-]*:"
 syn match apricosDirective  "\.[a-z]\+"
-syn region apricosString start=/"/ skip=/\\"/ end=/"/
+
+" String formats
+syn match apricosSpecialChar contained "\\\([\\nr\"\'\0]\|$\)"
+syn region apricosSingleString start=/'/ skip=/\\'/ end=/'/ contains=apricosSpecialChar
+syn region apricosDoubleString start=/"/ skip=/\\"/ end=/"/ contains=apricosSpecialChar
 
 " Number formats
 syn match decNumber "\<[0-9]\+\>"
@@ -49,7 +53,7 @@ syn keyword apricosInstruction ASET
 syn keyword apricosInstruction SYS
 
 
-" storage types
+" Storage types
 syn match apricosType "\.nearptr\>"
 syn match apricosType "\.segptr\>"
 syn match apricosType "\.farptr\>"
@@ -80,7 +84,9 @@ if version >= 508 || !exists("did_asm_syntax_inits")
   HiLink apricosLabel         Label
   HiLink apricosComment       Comment
   HiLink apricosTodo          Todo
-  HiLink apricosString        String
+  HiLink apricosDoubleString  String
+  HiLink apricosSingleString  String
+  HiLink apricosSpecialChar   SpecialChar
   HiLink hexNumber            Number
   HiLink decNumber            Number
   HiLink octNumber            Number
