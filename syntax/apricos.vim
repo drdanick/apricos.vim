@@ -50,7 +50,7 @@ syn keyword apricosInstruction LA LAl LAh
 syn keyword apricosInstruction BR BRn BRz BRp BRnz BRnp BRzp BRnzp 
 syn keyword apricosInstruction PRTin PRTout 
 syn keyword apricosInstruction ASET 
-syn keyword apricosInstruction SYS
+syn keyword apricosInstruction NOP
 
 
 " Storage types
