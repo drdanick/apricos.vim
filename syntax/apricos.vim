@@ -47,7 +47,7 @@ syn keyword apricosInstruction ST STal STah
 syn keyword apricosInstruction STI 
 syn keyword apricosInstruction SPUSH SPOP
 syn keyword apricosInstruction LA LAl LAh 
-syn keyword apricosInstruction BR BRn BRz BRp BRnz BRnp BRzp BRnzp 
+syn keyword apricosInstruction BR BRn BRz BRp BRnz BRnp BRzp BRnzp JMP
 syn keyword apricosInstruction PRTin PRTout 
 syn keyword apricosInstruction ASET 
 syn keyword apricosInstruction NOP
