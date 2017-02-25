@@ -66,7 +66,6 @@ syn match assemblerDirective "\#name\>"
 syn match assemblerDirective "\#segment\>"
 syn match assemblerDirective "\#include\>"
 syn match assemblerDirective "\#macro\>"
-syn match assemblerDirective "\#endmacro\>"
 
 syn case match
 
