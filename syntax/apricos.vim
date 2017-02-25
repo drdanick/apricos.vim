@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:    Apricos Assembler
 " Maintainer:  Nick Stones-Havas <nick@drdanick.com>
-" Last Change: 2017 Feb 3
+" Last Change: 2017 Feb 25
 " Revision:    2
 
 " For version 5.x: Clear all syntax items
