@@ -1,8 +1,8 @@
 " Vim syntax file
 " Language:    Apricos Assembler
 " Maintainer:  Nick Stones-Havas <nick@drdanick.com>
-" Last Change: 2014 Aug 5
-" Revision:    1
+" Last Change: 2017 Feb 3
+" Revision:    2
 
 " For version 5.x: Clear all syntax items
 " For version 6.0 and later: Quit when a syntax file was already loaded
