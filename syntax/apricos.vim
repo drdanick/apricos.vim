@@ -60,6 +60,7 @@ syn match apricosType "\.farptr\>"
 syn match apricosType "\.fill\>"
 syn match apricosType "\.blockw\>"
 syn match apricosType "\.stringz\>"
+syn match apricosType "\.padseg\>"
 
 " Assembler directives
 syn match assemblerDirective "\#name\>"
